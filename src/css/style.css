@@ -1,0 +1,150 @@
+/* HTML */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url('../imagens/bg-desktop.svg')no-repeat;    
+    background-size: cover;
+    background-color: var(--bg-color);
+}
+
+/* HEADER */
+header {
+    padding: 50px 0 0 80px;
+}
+
+/* MAIN */
+main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+main .container .image-area {
+    width: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main .container .info-area {
+    padding: 50px;
+    color: white;
+}
+
+main .container .info-area .titulo {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+main .container .info-area .subtitulo {
+    margin-bottom: 30px;
+}
+
+main .container .info-area .botao {
+    padding: 15px 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: var(--bg-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+main .container .info-area .botao:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    margin: 80px;
+    justify-content: flex-end;
+}
+
+footer .icons-area {
+    display: flex;
+}
+
+footer .icons-area .icon {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 100%;
+    border: 2px solid;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+footer .icons-area .icon:hover {
+    color: var(--secondary-color);
+}
+
+
+
+/* RESPONSIVO */
+@media (max-width: 1080px) {
+    /* HEADER */
+    header .logo img{
+        width: 150px;
+    }
+
+    /* MAIN */
+    main .container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    main .container .image-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .container .image-area img{
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        padding: 0;
+    }
+
+    main .container .info-area{
+        padding: 0;
+    }
+
+    main .container .info-area .titulo{
+        text-align: center;;
+        font-size: 30px;
+    }
+
+    main .container .info-area .subtitulo{
+        text-align: center;
+    }
+
+    main .container .info-area .botao-area {
+        text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
